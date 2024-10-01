@@ -45,6 +45,24 @@ public class SwipeControls : MonoBehaviour
             swipeEnd = Input.mousePosition;
             ProcessSwipe();
         }
+
+        //Keyboard Controls
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            OnSwipe(SwipeDirection.Up);
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            OnSwipe(SwipeDirection.Down);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            OnSwipe(SwipeDirection.Left);
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            OnSwipe(SwipeDirection.Right);
+        }
     }
 
     void ProcessSwipe()

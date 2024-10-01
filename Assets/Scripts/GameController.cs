@@ -60,6 +60,11 @@ public class GameController : MonoBehaviour
             {
                 StartGamePlay();
             }
+
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                StartGamePlay();
+            }
         }
     }
 
